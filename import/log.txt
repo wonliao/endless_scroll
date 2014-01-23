@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+ ========================================<br />http://www.7k7k.com/swf/75856.htm<br />結婚派對的蛋糕<br />游戲中使用鼠標點擊選擇物品完成制作。                      現在年輕人的結婚派對上都會有一個很多層的大蛋糕，很華麗很漂亮。現在制作蛋糕這個任務就交給你了！                      <br />INSERT INTO `wp_posts` ( 
+			`ID`,
+			`post_author`, 
+			`post_date`, 
+			`post_date_gmt`, 
+			`post_content`, 
+			`post_title`, 
+			`post_excerpt`, 
+			`post_status`, 
+			`comment_status`, 
+			`ping_status`, 
+			`post_password`, 
+			`post_name`, 
+			`to_ping`, 
+			`pinged`, 
+			`post_modified`, 
+			`post_modified_gmt`, 
+			`post_content_filtered`, 
+			`post_parent`, 
+			`guid`, 
+			`menu_order`, 
+			`post_type`, 
+			`post_mime_type`, 
+			`comment_count`
+			) VALUES ( 
+			'85856',   
+			1, 
+			'2012-04-28 12:10:00',   
+			'2012-04-28 12:10:00',  
+			'游戲中使用鼠標點擊選擇物品完成制作。                      現在年輕人的結婚派對上都會有一個很多層的大蛋糕，很華麗很漂亮。現在制作蛋糕這個任務就交給你了！                      ',  
+			'結婚派對的蛋糕',  
+			'', 
+			'private', 
+			'open', 
+			'open', 
+			'', 
+			'結婚派對的蛋糕', 
+			'', 
+			'', 
+			'2012-04-28 12:10:00', 
+			'2012-04-28 12:10:00', 
+			'', 
+			0, 
+			'', 
+			0, 
+			'post', 
+			'', 
+			0
+			);<br />insert_posts(1)<br />result41(Array) term_taxonomy_id(300)<br />cmd42(INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id` ) VALUES ( '85856', '300' );)<br />result42(1)<br />result41(Array) term_taxonomy_id(251)<br />cmd42(INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id` ) VALUES ( '85856', '251' );)<br />result42(1)<br />result41(Array) term_taxonomy_id(573)<br />cmd42(INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id` ) VALUES ( '85856', '573' );)<br />result42(1)<br />result41(Array) term_taxonomy_id(145)<br />cmd42(INSERT INTO `wp_term_relationships` ( `object_id`, `term_taxonomy_id` ) VALUES ( '85856', '145' );)<br />result42(1)<br />(1) => wp-content/uploads/img/7_85856.jpg<br />(1) => wp-content/uploads/img_big/7_85856.jpg<br />(1) => wp-content/uploads/swf/7_85856.swf<br />result(1)<br />花費時間(4)<br />
+</body>
+</html>

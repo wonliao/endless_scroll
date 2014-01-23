@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta property="og:image" content="http://wonliao.my.phpcloud.com/pet/pet_photo.png"/> 
+
+<link rel="stylesheet" type="text/css" href="./css/pet_photo.css" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="css/jquery.parallax.css" />
+
+	<style type="text/css" media="screen, projection">
+		#port {
+			background: rgb(47, 49, 52);
+			margin:0;
+			padding:0;
+			overflow: hidden;
+			position:absolute;
+			top:94px;
+			left:104px;
+			height: 500px;
+			width: 375px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<img src="front.png" style="position:absolute; top:0px; left:0px; width:580px; height:715px;"/>
+    
+	<div id="port">  
+
+          <img id="img1" class="parallax-layer" src="effect/101122754_1.png" alt="" />
+          <img id="img2" class="parallax-layer" src="effect/101122754_2.png" alt="" />
+          <img id="img3" class="parallax-layer" src="effect/101122754_3.png" alt="" />
+	</div>
+	<h1 style="position:absolute; top:630px; left:150px;">移動一下滑鼠看看</h1>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script type="text/javascript">
+	
+		jQuery(document).ready(function(){
+			// Declare parallax on layers
+			var scale = 1.00920245398773;	// 1.00920245398773
+			
+			var w1 = 375;
+			var w2 = w1 * scale;
+			var w3 = w2 * scale;
+			$('#img1').attr("width", w1);
+			$('#img2').attr("width", w2);
+			$('#img3').attr("width", w3);
+			
+			var h1 = 500;
+			var h2 = h1 * scale;
+			var h3 = h2 * scale;
+			$('#img1').attr("height", h1);
+			$('#img2').attr("height", h2);
+			$('#img3').attr("height", h3);
+			
+			jQuery('.parallax-layer').parallax({
+				mouseport: jQuery("#port")
+			});
+		});
+	</script>
+</body>
+</html>

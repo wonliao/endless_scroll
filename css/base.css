@@ -1,0 +1,265 @@
+/* Base */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, address, cite, code {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Remove annoying border on linked images. */
+a img {
+    border:none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+
+ul.horizontal {
+    list-style: none;
+}
+ul.horizontal li {
+    float: left;
+    padding: 0 0.6em;
+    border-right: 1px solid black;
+    height: 1.2em;
+}
+ul.horizontal li.last {
+    border-right: none;
+}
+
+/* Clearfix
+   http://www.positioniseverything.net/easyclearing.html
+   with added position relative */
+.clear:after    {content:"\0020"; display:block; height:0; clear:both; visibility:hidden; overflow:hidden;}
+.clear          {display:block; position: relative;}
+
+
+/*____ PRELOAD IMAGES ____*/
+body:after{
+content:
+url(../pet_img/102060922.jpg)
+url(../pet_img/102060921.jpg)
+url(../pet_img/102060102.jpg)
+url(../pet_img/102053106.jpg)
+url(../pet_img/102053101.jpg)
+url(../pet_img/102053105.jpg)
+url(../pet_img/102053102.jpg)
+url(../pet_img/102052704.jpg)
+url(../pet_img/102052703.jpg)
+url(../pet_img/102052501.jpg)
+url(../pet_img/102052304.jpg)
+url(../pet_img/102052302.jpg)
+url(../pet_img/102052204.jpg)
+url(../pet_img/102052102.jpg)
+url(../pet_img/102052104.jpg)
+url(../pet_img/102052103.jpg)
+url(../pet_img/102052102.jpg)
+url(../pet_img/102052101.jpg)
+url(../pet_img/102051621.jpg)
+url(../pet_img/102051620.jpg)
+url(../pet_img/102051612.jpg)
+url(../pet_img/101122758.jpg)
+url(../pet_img/102051308.jpg)
+url(../pet_img/102051301.jpg)
+url(../pet_img/102050802.jpg)
+url(../pet_img/102050815.jpg)
+url(../pet_img/102050810.jpg)
+url(../pet_img/102050701.jpg)
+url(../pet_img/102050203.jpg)
+url(../pet_img/102043002.jpg)
+url(../pet_img/102042918.jpg)
+url(../pet_img/102042725.jpg)
+url(../pet_img/102042609.jpg)
+url(../pet_img/102042501.jpg)
+url(../pet_img/102042408.jpg)
+url(../pet_img/102042404.jpg)
+url(../pet_img/102042302.jpg)
+url(../pet_img/101122757.jpg)
+url(../pet_img/102042210.jpg)
+url(../pet_img/102042205.jpg)
+url(../pet_img/102042203.jpg)
+url(../pet_img/102042106.jpg)
+url(../pet_img/102041920.jpg)
+url(../pet_img/102041606.jpg)
+url(../pet_img/102041505.jpg)
+url(../pet_img/102041419.jpg)
+url(../pet_img/102041313.jpg)
+url(../pet_img/102041207.jpg)
+url(../pet_img/102041113.jpg)
+url(../pet_img/102040709.jpg)
+url(../pet_img/102040414.jpg)
+url(../pet_img/102040316.jpg)
+url(../pet_img/102040314.jpg)
+url(../pet_img/102032210.jpg)
+url(../pet_img/102032907.jpg)
+url(../pet_img/102032906.jpg)
+url(../pet_img/102032905.jpg)
+url(../pet_img/102032904.jpg)
+url(../pet_img/102032903.jpg)
+url(../pet_img/102032902.jpg)
+url(../pet_img/102032901.jpg)
+url(../pet_img/102032710.jpg)
+url(../pet_img/102032709.jpg)
+url(../pet_img/102032708.jpg)
+url(../pet_img/102032707.jpg)
+url(../pet_img/102032212.jpg)
+url(../pet_img/102032211.jpg)
+url(../pet_img/102031516.jpg)
+url(../pet_img/102031504.jpg)
+url(../pet_img/102031312.jpg)
+url(../pet_img/102030707.jpg)
+url(../pet_img/102030702.jpg)
+url(../pet_img/102030526.jpg)
+url(../pet_img/102030411.jpg)
+url(../pet_img/102020807.jpg)
+url(../pet_img/102030301.jpg)
+url(../pet_img/102030110.jpg)
+url(../pet_img/102022612.jpg)
+url(../pet_img/102022602.jpg)
+url(../pet_img/102022210.jpg)
+url(../pet_img/102022106.jpg)
+url(../pet_img/102022010.jpg)
+url(../pet_img/101122761.jpg)
+url(../pet_img/102020306.jpg)
+url(../pet_img/102020303.jpg)
+url(../pet_img/102020203.jpg)
+url(../pet_img/102020104.jpg)
+url(../pet_img/102020103.jpg)
+url(../pet_img/102013106.jpg)
+url(../pet_img/102012902.jpg)
+url(../pet_img/101122760.jpg)
+url(../pet_img/102012901.jpg)
+url(../pet_img/102012309.jpg)
+url(../pet_img/102012305.jpg)
+url(../pet_img/102011605.jpg)
+url(../pet_img/102011602.jpg)
+url(../pet_img/102011510.jpg)
+url(../pet_img/102011420.jpg)
+url(../pet_img/102011005.jpg)
+url(../pet_img/102010908.jpg)
+url(../pet_img/102010717.jpg)
+url(../pet_img/102010715.jpg)
+url(../pet_img/102010702.jpg)
+url(../pet_img/102010415.jpg)
+url(../pet_img/102010301.jpg)
+url(../pet_img/101122759.jpg)
+url(../pet_img/102010102.jpg)
+url(../pet_img/101122772.jpg)
+url(../pet_img/101122771.jpg)
+url(../pet_img/101122770.jpg)
+url(../pet_img/101122769.jpg)
+url(../pet_img/101122768.jpg)
+url(../pet_img/101122767.jpg)
+url(../pet_img/101122766.jpg)
+url(../pet_img/101122765.jpg)
+url(../pet_img/101122764.jpg)
+url(../pet_img/101122763.jpg)
+url(../pet_img/101122762.jpg)
+url(../pet_img/101122756.jpg)
+url(../pet_img/101122755.jpg)
+url(../pet_img/101122754.jpg)
+url(../pet_img/101122753.jpg)
+url(../pet_img/101122752.jpg)
+url(../pet_img/101122751.jpg)
+url(../pet_img/101122750.jpg)
+url(../pet_img/101122749.jpg)
+url(../pet_img/101122748.jpg)
+url(../pet_img/101122747.jpg)
+url(../pet_img/101122746.jpg)
+url(../pet_img/101122745.jpg)
+url(../pet_img/101122744.jpg)
+url(../pet_img/101122743.jpg)
+url(../pet_img/101122742.jpg)
+url(../pet_img/101122741.jpg)
+url(../pet_img/101122740.jpg)
+url(../pet_img/101122739.jpg)
+url(../pet_img/101122738.jpg)
+url(../pet_img/101122737.jpg)
+url(../pet_img/101122736.jpg)
+url(../pet_img/101122735.jpg)
+url(../pet_img/101122734.jpg)
+url(../pet_img/101122733.jpg)
+url(../pet_img/101122732.jpg)
+url(../pet_img/101122731.jpg)
+url(../pet_img/101122730.jpg)
+url(../pet_img/101122729.jpg)
+url(../pet_img/101122728.jpg)
+url(../pet_img/101122727.jpg)
+url(../pet_img/101122726.jpg)
+url(../pet_img/101122725.jpg)
+url(../pet_img/101122724.jpg)
+url(../pet_img/101122723.jpg)
+url(../pet_img/101122722.jpg)
+url(../pet_img/101122721.jpg)
+url(../pet_img/101122720.jpg)
+url(../pet_img/101122719.jpg)
+url(../pet_img/101122718.jpg)
+url(../pet_img/101122717.jpg)
+url(../pet_img/101122604.jpg)
+url(../pet_img/101122716.jpg)
+url(../pet_img/101122603.jpg)
+url(../pet_img/101122715.jpg)
+url(../pet_img/101122714.jpg)
+url(../pet_img/101122713.jpg)
+url(../pet_img/101122712.jpg)
+url(../pet_img/101122711.jpg)
+url(../pet_img/101122710.jpg)
+url(../pet_img/101122709.jpg)
+url(../pet_img/101122701.jpg)
+url(../pet_img/101122615.jpg)
+url(../pet_img/101122611.jpg)
+url(../pet_img/101122605.jpg)
+url(../pet_img/101122604.jpg)
+url(../pet_img/101122603.jpg)
+url(../pet_img/101122602.jpg)
+url(../pet_img/101122601.jpg)
+url(../pet_img/101122504.jpg)
+url(../pet_img/101122503.jpg)
+url(../pet_img/101120605.jpg)
+url(../pet_img/101122502.jpg)
+url(../pet_img/101122501.jpg)
+url(../pet_img/101122108.jpg)
+url(../pet_img/101122101.jpg)
+url(../pet_img/101121411.jpg)
+url(../pet_img/101121214.jpg)
+url(../pet_img/101121114.jpg)
+url(../pet_img/101120507.jpg)
+url(../pet_img/101120502.jpg)
+url(../pet_img/101120412.jpg)
+url(../pet_img/101113001.jpg)
+url(../pet_img/101112507.jpg)
+url(../pet_img/101112503.jpg)
+url(../pet_img/101112309.jpg)
+url(../pet_img/101110502.jpg)
+url(../pet_img/101110411.jpg)
+url(../pet_img/101110303.jpg)
+url(../pet_img/101101001.jpg)
+url(../pet_img/101100134.jpg)
+url(../pet_img/101100203.jpg)
+url(../pet_img/101090504.jpg)
+url(../pet_img/101082710.jpg)
+url(../pet_img/101082708.jpg)
+url(../pet_img/101082705.jpg)
+url(../pet_img/101072606.jpg)
+url(../pet_img/101072604.jpg)
+url(../pet_img/101072602.jpg)
+url(../pet_img/101041102.jpg);
+display:none;
+}

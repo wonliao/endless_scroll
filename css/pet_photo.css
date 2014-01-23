@@ -1,0 +1,11 @@
+/* CSS Document */
+
+/*____ PRELOAD IMAGES ____*/
+body:after{
+content:
+url(../effect/101122754_1.png)
+url(../effect/101122754_1.png)
+url(../effect/101122754_1.png)
+url(../front.png);
+display:none;
+}

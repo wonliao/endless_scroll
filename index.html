@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta property="og:image" content="http://wonliao.my.phpcloud.com/pet/index.png"/> 
+<title>Untitled Document</title>
+
+<link rel="stylesheet" type="text/css" href="./css/base.css" />
+</head>
+
+<body>
+
+<div id="all_img_div">
+    <div id="img_div_0"></div>
+    <div id="img_div_1"></div>
+    <div id="img_div_2"></div>
+    <div id="img_div_3"></div>
+    <div id="img_div_4"></div>
+    <div id="img_div_5"></div>
+</div>
+
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/endless_scroll_h.js"></script>
+<script type="text/javascript" src="./js/endless_scroll_w1.js"></script>
+<script type="text/javascript" src="./js/endless_scroll_w2.js"></script>
+<script type="text/javascript">
+
+$.getJSON("pet.json", function(json) {
+   // console.log(json); // this will show the info it in firebug console
+	
+	var petList = json['result']['records'];
+	//console.log(petList);
+	
+	
+	var row = 6;
+	var _w = Math.floor(screen.width);
+	var _h = Math.floor(screen.height / 3)+'px';
+
+	for(var i=0; i<petList.length; i++) {
+
+		var id = petList[i].AcceptNum;
+		var img_src = "./pet_img/"+id+".jpg";
+		//console.log(img_src);
+		var index = i%row;
+		$("#img_div_"+index).append("<img src='"+img_src+"' style='height:"+_h+"' />");
+	}
+
+	// 垂直捲動
+	$("#all_img_div").endlessScroll_h({ width: Math.floor(screen.width), height: Math.floor(screen.height), steps: -5, speed: 40, mousestop: false });
+
+	// 橫向捲動
+	$('#all_img_div1').find('#img_div_0').endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div1').find('#img_div_1').endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+	$('#all_img_div1').find('#img_div_2').endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div1').find('#img_div_3').endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+	$('#all_img_div1').find('#img_div_4').endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div1').find('#img_div_5').endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+	
+	// 將 垂直捲動 所clone 出來的div 改 id，再設為 橫向捲動
+	$('#all_img_div2').find('#img_div_0').attr("id", "img2_div_0").endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div2').find('#img_div_1').attr("id", "img2_div_1").endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+	$('#all_img_div2').find('#img_div_2').attr("id", "img2_div_2").endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div2').find('#img_div_3').attr("id", "img2_div_3").endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+	$('#all_img_div2').find('#img_div_4').attr("id", "img2_div_4").endlessScroll_w1({ width: _w, height: _h, steps: -2, speed: 40, mousestop: false });
+	$('#all_img_div2').find('#img_div_5').attr("id", "img2_div_5").endlessScroll_w1({ width: _w, height: _h, steps: 2, speed: 40, mousestop: false });
+
+});
+
+</script>
+
+</body>
+</html>
